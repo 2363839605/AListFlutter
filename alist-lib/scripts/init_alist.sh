@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_REPO="https://github.com/alist-org/alist.git"
+GIT_REPO="https://github.com/2363839605/alist.git"
 TAG_NAME=$(git -c 'versionsort.suffix=-' ls-remote --exit-code --refs --sort='version:refname' --tags $GIT_REPO | tail --lines=1 | cut --delimiter='/' --fields=3)
 
 echo "AList - ${TAG_NAME}"
